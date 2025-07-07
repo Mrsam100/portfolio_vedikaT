@@ -137,17 +137,17 @@
   .dynamic-text {
     background: linear-gradient(
       45deg,
-      hsl(200, 100%, 50%),
-      hsl(280, 100%, 60%),
-      hsl(320, 100%, 50%),
-      hsl(150, 100%, 50%),
-      hsl(200, 100%, 50%)
+      hsl(200, 90%, 60%),
+      hsl(280, 80%, 70%),
+      hsl(320, 90%, 60%),
+      hsl(150, 90%, 60%),
+      hsl(200, 90%, 60%)
     );
     background-size: 400% 400%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: dynamicGradient 3s ease infinite;
+    animation: dynamicGradient 4s ease infinite;
   }
   
   @keyframes dynamicGradient {
@@ -175,13 +175,12 @@
   
   .text-glow {
     text-shadow: 
-      0 0 10px currentColor,
-      0 0 20px currentColor,
-      0 0 30px currentColor;
+      0 0 5px rgba(0, 212, 255, 0.3),
+      0 0 10px rgba(0, 212, 255, 0.2);
   }
   
   .pulse-text {
-    animation: textPulse 2s ease-in-out infinite;
+    animation: textPulse 3s ease-in-out infinite;
   }
   
   @keyframes textPulse {
@@ -190,8 +189,8 @@
       opacity: 1;
     }
     50% { 
-      transform: scale(1.02);
-      opacity: 0.9;
+      transform: scale(1.01);
+      opacity: 0.95;
     }
   }
   
