@@ -13,7 +13,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             <motion.p
-              className="text-[hsl(200,100%,50%)] text-lg mb-4 font-mono"
+              className="text-lg mb-4 font-mono dynamic-text"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -27,12 +27,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <span className="text-[hsl(200,100%,50%)] neon-text">Hi, I'm </span>
-              <span className="text-[hsl(200,100%,50%)] neon-text">Vedika</span>
+              <span className="dynamic-text text-glow">Hi, I'm </span>
+              <span className="dynamic-text text-glow pulse-text">Vedika</span>
             </motion.h1>
 
             <motion.h2
-              className="text-2xl md:text-3xl text-gray-300 mb-6 font-semibold"
+              className="text-2xl md:text-3xl mb-6 font-semibold dynamic-text"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -122,7 +122,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.02 }}
                 data-interactive="true"
               >
-                <span className="text-8xl font-bold text-[hsl(200,100%,50%)] neon-text">
+                <span className="text-8xl font-bold dynamic-text text-glow pulse-text">
                   VD
                 </span>
                 

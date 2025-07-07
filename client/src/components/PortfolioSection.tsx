@@ -55,7 +55,7 @@ export default function PortfolioSection() {
     <section id="portfolio" className="min-h-screen py-20" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-12 neon-text text-[hsl(150,100%,50%)]"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 dynamic-text text-glow"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

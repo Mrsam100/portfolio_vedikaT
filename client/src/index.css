@@ -134,6 +134,67 @@
     text-shadow: 0 0 10px currentColor;
   }
   
+  .dynamic-text {
+    background: linear-gradient(
+      45deg,
+      hsl(200, 100%, 50%),
+      hsl(280, 100%, 60%),
+      hsl(320, 100%, 50%),
+      hsl(150, 100%, 50%),
+      hsl(200, 100%, 50%)
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dynamicGradient 3s ease infinite;
+  }
+  
+  @keyframes dynamicGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid hsl(200, 100%, 50%);
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: hsl(200, 100%, 50%); }
+  }
+  
+  .text-glow {
+    text-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor;
+  }
+  
+  .pulse-text {
+    animation: textPulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes textPulse {
+    0%, 100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% { 
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+  }
+  
   .portfolio-card {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(0, 212, 255, 0.1));
     backdrop-filter: blur(10px);

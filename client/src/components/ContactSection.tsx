@@ -51,7 +51,7 @@ export default function ContactSection() {
     <section id="contact" className="min-h-screen flex items-center py-20" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-12 neon-text text-[hsl(320,100%,50%)]"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 dynamic-text text-glow"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -64,7 +64,7 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-[hsl(200,100%,50%)]">Get In Touch</h3>
+            <h3 className="text-2xl font-bold mb-6 dynamic-text">Get In Touch</h3>
             <p className="text-gray-300 mb-6 text-lg">
               Ready to bring your creative vision to life? I'd love to hear about your project and discuss how we can collaborate to create something amazing together.
             </p>

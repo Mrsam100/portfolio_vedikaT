@@ -15,7 +15,7 @@ export default function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text text-[hsl(320,100%,50%)]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 dynamic-text text-glow">
               About Me
             </h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">

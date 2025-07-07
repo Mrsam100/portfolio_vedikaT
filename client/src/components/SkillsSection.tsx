@@ -41,7 +41,7 @@ export default function SkillsSection() {
     <section id="skills" className="min-h-screen flex items-center py-20" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-12 neon-text text-[hsl(200,100%,50%)]"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 dynamic-text text-glow"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -54,7 +54,7 @@ export default function SkillsSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-[hsl(320,100%,50%)]">Design Tools</h3>
+            <h3 className="text-2xl font-bold mb-6 dynamic-text">Design Tools</h3>
             <div className="space-y-4">
               {designTools.map((skill, index) => (
                 <SkillBar key={skill.name} skill={skill} delay={0.3 + index * 0.1} />
@@ -66,7 +66,7 @@ export default function SkillsSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-[hsl(150,100%,50%)]">Creative Skills</h3>
+            <h3 className="text-2xl font-bold mb-6 dynamic-text">Creative Skills</h3>
             <div className="space-y-4">
               {creativeSkills.map((skill, index) => (
                 <SkillBar key={skill.name} skill={skill} delay={0.5 + index * 0.1} />
