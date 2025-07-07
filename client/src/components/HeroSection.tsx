@@ -74,34 +74,24 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <motion.div
-                className="w-10 h-10 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] transition-colors cursor-pointer"
+              <motion.a
+                href="https://linkedin.com/in/vedika-designer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] hover:bg-[hsl(200,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
                 whileHover={{ scale: 1.1 }}
                 data-interactive="true"
               >
-                <i className="fab fa-github text-lg"></i>
-              </motion.div>
-              <motion.div
-                className="w-10 h-10 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] transition-colors cursor-pointer"
+                <i className="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
+              </motion.a>
+              <motion.a
+                href="mailto:vedika.creative@gmail.com"
+                className="w-12 h-12 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(320,100%,50%)] hover:text-[hsl(320,100%,50%)] hover:bg-[hsl(320,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
                 whileHover={{ scale: 1.1 }}
                 data-interactive="true"
               >
-                <i className="fab fa-linkedin text-lg"></i>
-              </motion.div>
-              <motion.div
-                className="w-10 h-10 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] transition-colors cursor-pointer"
-                whileHover={{ scale: 1.1 }}
-                data-interactive="true"
-              >
-                <i className="fab fa-behance text-lg"></i>
-              </motion.div>
-              <motion.div
-                className="w-10 h-10 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] transition-colors cursor-pointer"
-                whileHover={{ scale: 1.1 }}
-                data-interactive="true"
-              >
-                <i className="fab fa-dribbble text-lg"></i>
-              </motion.div>
+                <i className="fas fa-envelope text-xl group-hover:scale-110 transition-transform"></i>
+              </motion.a>
             </motion.div>
           </motion.div>
 
