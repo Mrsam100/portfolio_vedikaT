@@ -78,19 +78,19 @@ export default function HeroSection() {
                 href="https://linkedin.com/in/vedika-designer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] hover:bg-[hsl(200,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
+                className="w-14 h-14 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(200,100%,50%)] hover:text-[hsl(200,100%,50%)] hover:bg-[hsl(200,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
                 whileHover={{ scale: 1.1 }}
                 data-interactive="true"
               >
-                <i className="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
+                <i className="fab fa-linkedin text-2xl text-blue-400 group-hover:text-[hsl(200,100%,50%)] group-hover:scale-110 transition-all"></i>
               </motion.a>
               <motion.a
                 href="mailto:vedika.creative@gmail.com"
-                className="w-12 h-12 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(320,100%,50%)] hover:text-[hsl(320,100%,50%)] hover:bg-[hsl(320,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
+                className="w-14 h-14 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-[hsl(320,100%,50%)] hover:text-[hsl(320,100%,50%)] hover:bg-[hsl(320,100%,50%)] hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
                 whileHover={{ scale: 1.1 }}
                 data-interactive="true"
               >
-                <i className="fas fa-envelope text-xl group-hover:scale-110 transition-transform"></i>
+                <i className="fas fa-envelope text-2xl text-pink-400 group-hover:text-[hsl(320,100%,50%)] group-hover:scale-110 transition-all"></i>
               </motion.a>
             </motion.div>
           </motion.div>
