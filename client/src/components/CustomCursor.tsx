@@ -46,43 +46,54 @@ export default function CustomCursor() {
     switch (cursorState) {
       case "hover":
         return {
-          width: 40,
-          height: 40,
-          backgroundColor: "rgba(255, 0, 128, 0.6)",
-          border: "2px solid hsl(320, 100%, 50%)",
+          width: 48,
+          height: 48,
+          background: "linear-gradient(45deg, hsl(200, 100%, 50%) 0%, hsl(280, 100%, 60%) 25%, hsl(320, 100%, 50%) 50%, hsl(150, 100%, 50%) 75%, hsl(200, 100%, 50%) 100%)",
+          backgroundSize: "400% 400%",
+          boxShadow: "0 0 30px rgba(0, 212, 255, 0.7), 0 0 60px rgba(255, 0, 128, 0.5), 0 0 90px rgba(0, 255, 136, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2)",
+          filter: "blur(0.5px)",
         };
       case "click":
         return {
-          width: 60,
-          height: 60,
-          backgroundColor: "rgba(0, 255, 136, 0.4)",
-          border: "3px solid hsl(150, 100%, 50%)",
+          width: 72,
+          height: 72,
+          background: "linear-gradient(45deg, hsl(200, 100%, 50%) 0%, hsl(280, 100%, 60%) 25%, hsl(320, 100%, 50%) 50%, hsl(150, 100%, 50%) 75%, hsl(200, 100%, 50%) 100%)",
+          backgroundSize: "400% 400%",
+          boxShadow: "0 0 50px rgba(0, 212, 255, 0.8), 0 0 100px rgba(255, 0, 128, 0.6), 0 0 150px rgba(0, 255, 136, 0.4), inset 0 0 30px rgba(255, 255, 255, 0.3)",
+          filter: "blur(0.5px)",
         };
       default:
         return {
-          width: 20,
-          height: 20,
-          backgroundColor: "rgba(0, 212, 255, 0.8)",
-          border: "none",
+          width: 24,
+          height: 24,
+          background: "linear-gradient(45deg, hsl(200, 100%, 50%) 0%, hsl(280, 100%, 60%) 25%, hsl(320, 100%, 50%) 50%, hsl(150, 100%, 50%) 75%, hsl(200, 100%, 50%) 100%)",
+          backgroundSize: "400% 400%",
+          boxShadow: "0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(255, 0, 128, 0.3), 0 0 60px rgba(0, 255, 136, 0.2)",
+          filter: "blur(0.5px)",
         };
     }
   };
 
   return (
     <motion.div
-      className="custom-cursor hidden md:block"
+      className={`custom-cursor hidden md:block ${cursorState}`}
       animate={{
-        left: mousePosition.x,
-        top: mousePosition.y,
+        left: mousePosition.x - (getCursorVariant().width / 2),
+        top: mousePosition.y - (getCursorVariant().height / 2),
         ...getCursorVariant(),
       }}
-      transition={{ type: "spring", stiffness: 500, damping: 28 }}
+      transition={{ 
+        type: "spring", 
+        stiffness: 400, 
+        damping: 25,
+        left: { type: "spring", stiffness: 800, damping: 30 },
+        top: { type: "spring", stiffness: 800, damping: 30 }
+      }}
       style={{
         position: "fixed",
         pointerEvents: "none",
         zIndex: 9999,
         borderRadius: "50%",
-        mixBlendMode: "difference",
       }}
     />
   );
