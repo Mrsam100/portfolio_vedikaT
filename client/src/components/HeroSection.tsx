@@ -128,7 +128,7 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
               <motion.div
-                className="w-90 h-90 border-4 border-[hsl(200,100%,50%)] rounded-full flex items-center justify-center relative overflow-hidden glow"
+                className="w-80 h-80 border-4 border-[hsl(200,100%,50%)] rounded-full flex items-center justify-center relative overflow-hidden glow"
                 whileHover={{ scale: 1.02 }}
                 data-interactive="true"
               >
