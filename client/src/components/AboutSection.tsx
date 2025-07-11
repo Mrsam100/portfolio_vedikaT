@@ -19,7 +19,7 @@ export default function AboutSection() {
               About Me
             </h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate creative designer with over 5 years of experience crafting visual experiences that tell compelling stories. My work spans across digital design, branding, and interactive media.
+              I'm a passionate creative designer with over 2 years of experience crafting visual experiences that tell compelling stories. My work spans across digital design, branding, and interactive media.
             </p>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
               I believe in the power of design to transform ideas into impactful visual narratives. Every project is an opportunity to push creative boundaries and deliver extraordinary results.
