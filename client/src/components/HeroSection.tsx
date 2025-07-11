@@ -101,7 +101,7 @@ export default function HeroSection() {
   <i className="fab fa-instagram text-2xl text-pink-400 group-hover:text-pink-500 group-hover:scale-110 transition-all"></i>
 </motion.a>
 <motion.a
-  href="https://www.behance.net/yourusername"  // 🔁 Replace with your Behance profile URL
+  href="https://www.behance.net/vedikatotlani19"  // 🔁 Replace with your Behance profile URL
   target="_blank"
   rel="noopener noreferrer"
   className="w-14 h-14 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-blue-500 hover:text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
