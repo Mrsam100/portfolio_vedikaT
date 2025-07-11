@@ -56,7 +56,7 @@ export default function ContactSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          Let's Connect
+          Let's Connect 
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
@@ -75,7 +75,7 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-phone text-[hsl(150,100%,50%)]"></i>
-                <span>+91 76983-17646</span>
+                <span>+91 83204-80372</span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-map-marker-alt text-[hsl(320,100%,50%)]"></i>

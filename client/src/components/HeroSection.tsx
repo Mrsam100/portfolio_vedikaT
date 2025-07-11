@@ -101,22 +101,16 @@ export default function HeroSection() {
   <i className="fab fa-instagram text-2xl text-pink-400 group-hover:text-pink-500 group-hover:scale-110 transition-all"></i>
 </motion.a>
 <motion.a
-  href="https://x.com/your_username"
+  href="https://www.behance.net/yourusername"  // 🔁 Replace with your Behance profile URL
   target="_blank"
   rel="noopener noreferrer"
-  className="w-14 h-14 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
+  className="w-14 h-14 border-2 border-gray-600 rounded-lg flex items-center justify-center hover:border-blue-500 hover:text-blue-500 hover:bg-blue-500 hover:bg-opacity-10 transition-all duration-300 cursor-pointer group"
   whileHover={{ scale: 1.1 }}
   data-interactive="true"
 >
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="white"
-    viewBox="0 0 24 24"
-    className="w-6 h-6 group-hover:scale-110 transition-transform"
-  >
-    <path d="M20.39 3H17.2L12.88 8.19 8.96 3H3.5l6.83 9.23L3.5 21h3.19l4.65-5.75L15.7 21h5.57l-7.03-9.5L20.39 3Zm-3.13 16.59-5.16-6.99-5.35 6.99H5.68l6.31-8.22L6.44 4.91h3.13l4.79 6.49 4.94-6.49h1.25l-6.19 7.99 6.38 8.19h-2.48Z"/>
-  </svg>
+  <i className="fab fa-behance text-2xl text-blue-400 group-hover:text-blue-500 group-hover:scale-110 transition-all"></i>
 </motion.a>
+
 
             </motion.div>
           </motion.div>
@@ -134,7 +128,7 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
               <motion.div
-                className="w-80 h-80 border-4 border-[hsl(200,100%,50%)] rounded-full flex items-center justify-center relative overflow-hidden glow"
+                className="w-90 h-90 border-4 border-[hsl(200,100%,50%)] rounded-full flex items-center justify-center relative overflow-hidden glow"
                 whileHover={{ scale: 1.02 }}
                 data-interactive="true"
               >
