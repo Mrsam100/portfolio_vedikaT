@@ -8,7 +8,7 @@ export default function ParticleBackground() {
     const createParticles = () => {
       if (!containerRef.current) return;
 
-      const particleCount = 50;
+      const particleCount = 100;
       const particles = [];
 
       for (let i = 0; i < particleCount; i++) {

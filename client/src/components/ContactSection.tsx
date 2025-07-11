@@ -75,11 +75,11 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-phone text-[hsl(150,100%,50%)]"></i>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 7487-02-1974</span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-map-marker-alt text-[hsl(320,100%,50%)]"></i>
-                <span>Los Angeles, CA</span>
+                <span>Ahmedabad, India</span>
               </div>
             </div>
           </motion.div>

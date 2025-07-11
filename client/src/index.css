@@ -120,18 +120,18 @@
   
   .particle {
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 5px;
+    height: 5px;
     background: rgba(0, 212, 255, 0.5);
     border-radius: 50%;
   }
   
   .glow {
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
   }
   
   .neon-text {
-    text-shadow: 0 0 10px currentColor;
+    text-shadow: 0 0 20px currentColor;
   }
   
   .dynamic-text {
@@ -180,7 +180,7 @@
   }
   
   .pulse-text {
-    animation: textPulse 3s ease-in-out infinite;
+    animation: textPulse 5s ease-in-out infinite;
   }
   
   @keyframes textPulse {
