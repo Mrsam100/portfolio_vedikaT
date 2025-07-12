@@ -5,6 +5,7 @@ import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 
+
 export default function ContactSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -39,14 +40,14 @@ export default function ContactSection() {
     e.preventDefault();
     contactMutation.mutate(formData);
   };
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
-
+  
   return (
     <section id="contact" className="min-h-screen flex items-center py-20" ref={ref}>
       <div className="container mx-auto px-6">

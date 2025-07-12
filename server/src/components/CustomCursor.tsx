@@ -53,6 +53,7 @@ export default function CustomCursor() {
           boxShadow: "0 0 30px rgba(0, 212, 255, 0.7), 0 0 60px rgba(255, 0, 128, 0.5), 0 0 90px rgba(0, 255, 136, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2)",
           filter: "blur(0.5px)",
         };
+        
       case "click":
         return {
           width: 72,
