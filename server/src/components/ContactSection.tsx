@@ -71,11 +71,11 @@ export default function ContactSection() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-[hsl(200,100%,50%)]"></i>
-                <span>vedika.creative@email.com</span>
+                <span>tvedika65@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-phone text-[hsl(150,100%,50%)]"></i>
-                <span>+91 7487-02-1974</span>
+                <span>+91 83204-80372</span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fas fa-map-marker-alt text-[hsl(320,100%,50%)]"></i>
